@@ -1,4 +1,4 @@
-OBJECTS	= glsim.o
+OBJECTS	= main.o
 CXX = clang
 
 #ifeq ($(APPLE),1)
@@ -7,7 +7,7 @@ LDFLAGS = -L/usr/X11R6/lib
 LDLIBS  = -lGL -lglut -lm
 #endif
 
-glsim: $(OBJECTS)
+main: $(OBJECTS)
 
 clean:
 	rm -rf glsim $(OBJECTS)
